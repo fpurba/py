@@ -8,7 +8,7 @@ st.title('Peta Sebaran Covid-19 di Indonesia')
 # Create a text element and let the reader know the data is loading.
 data_load_state = st.text('Loading data...')
 # Load data into the dataframe.
-data_raw = pd.read_csv('C:\\Users\\Purba\\Desktop\\fProject\\covid_19_indonesia_time_series_all.csv')
+data_raw = pd.read_csv('covid_19_indonesia_time_series_all.csv')
 # Clean data
 data_clean = data_raw[['Date', 'Location', 'Longitude', 'Latitude', 'New Cases', 'New Deaths', 'New Recovered']]
 data_clean = data_clean.loc[data_clean['Location'] != 'Indonesia']
